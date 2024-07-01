@@ -1,0 +1,21 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Run Marp Server",
+      "program": "${workspaceFolder}/node_modules/@marp-team/marp-cli/marp-cli",
+      "request": "launch",
+      "args": [
+        "-s",
+        "src"
+      ],
+      "env": {
+        "PORT": "5678"
+      },
+      "skipFiles": [
+        "<node_internals>/**"
+      ],
+      "type": "node"
+    }
+  ]
+}

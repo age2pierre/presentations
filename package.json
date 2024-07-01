@@ -1,0 +1,41 @@
+{
+  "name": "presentations",
+  "version": "1.6.0",
+  "private": true,
+  "main": "index.js",
+  "engines": {
+    "node": ">=18",
+    "npm": ">=9"
+  },
+  "packageManager": "pnpm@9.4.0",
+  "scripts": {
+    "server": "marp -p --server ./src",
+    "build": "node scripts/build.js",
+    "build:pdf": "FORMATS=html,pdf node scripts/build.js"
+  },
+  "license": "MIT",
+  "marp": {
+    "themeSet": "./theme",
+    "engine": "./engine.js"
+  },
+  "dependencies": {
+    "@marp-team/marp-cli": "3.4.0",
+    "@marp-team/marp-core": "3.9.0",
+    "@marp-team/marpit": "3.0.0",
+    "@newdash/newdash": "5.23.1",
+    "@openui5/ts-types": "1.125.0",
+    "@textlint/markdown-to-ast": "14.0.4",
+    "@types/debug": "4.1.12",
+    "@types/markdown-it": "14.1.1",
+    "colors": "1.4.0",
+    "debug": "4.3.5",
+    "fast-glob": "3.3.2",
+    "git-rev-sync": "3.0.2",
+    "markdown-it-block-embed": "^0.0.3",
+    "markdown-it-html5-media": "^0.7.1",
+    "mkdirp": "3.0.1",
+    "pretty": "2.0.0",
+    "replace": "1.2.2",
+    "textlint": "14.0.4"
+  }
+}

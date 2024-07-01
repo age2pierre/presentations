@@ -1,0 +1,356 @@
+/*!
+ * Marp dark theme.
+ * @theme dark
+ * @auto-scaling false
+ * @size 4:3 2000px 1500px
+ * @size 16:9 1920px 1080px
+ */
+
+:root {
+  --atheme-background: rgba(28, 30, 39, 0.651);
+  --atheme-current-line: #0095da;
+  --atheme-foreground: #f8f8f2ca;
+  --atheme-comment: #b7c3cea9;
+  --atheme-cyan: #bdf7ffce;
+  --atheme-green: #50fa7b;
+  --atheme-orange: #ffb86c;
+  --atheme-pink: #ff79c6;
+  --atheme-purple: #bd93f9;
+  --atheme-red: #ff5555d2;
+  --atheme-yellow: #f1fa8c;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+section,
+li {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.hljs {
+  display: inline-block;
+  padding: 0.5em;
+  background: #23241f;
+}
+
+.hljs,
+.hljs-tag,
+.hljs-subst {
+  color: #f8f8f2;
+}
+
+.hljs-strong,
+.hljs-emphasis {
+  color: #a8a8a2;
+}
+
+.hljs-bullet,
+.hljs-quote,
+.hljs-number,
+.hljs-regexp,
+.hljs-literal,
+.hljs-link {
+  color: #ad81ffd7;
+}
+
+.hljs-code,
+.hljs-title,
+.hljs-section,
+.hljs-selector-class {
+  color: #a6e22e;
+}
+
+.hljs-strong {
+  font-weight: bold;
+}
+
+.hljs-emphasis {
+  font-style: italic;
+}
+
+.hljs-keyword,
+.hljs-selector-tag,
+.hljs-name,
+.hljs-attr {
+  color: var(--atheme-red);
+}
+
+.hljs-symbol,
+.hljs-attribute {
+  color: #66d9ef;
+}
+
+.hljs-params,
+.hljs-class .hljs-title {
+  color: #f8f8f2;
+}
+
+.hljs-string,
+.hljs-type,
+.hljs-built_in,
+.hljs-builtin-name,
+.hljs-selector-id,
+.hljs-selector-attr,
+.hljs-selector-pseudo,
+.hljs-addition,
+.hljs-variable,
+.hljs-template-variable {
+  color: var(--atheme-yellow);
+}
+
+.hljs-comment,
+.hljs-deletion,
+.hljs-meta {
+  color: var(--atheme-comment);
+}
+
+svg[data-marp-fitting="svg"] {
+  max-height: 580px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-block-start: 0.5em;
+  margin-block-end: 0.5em;
+  color: var(--atheme-foreground);
+}
+
+h1 strong,
+h2 strong,
+h3 strong,
+h4 strong,
+h5 strong,
+h6 strong {
+  font-weight: inherit;
+}
+
+h1 {
+  font-size: 1.5em;
+}
+
+section h1:nth-child(1) {
+  padding-top: 10%;
+}
+
+h2 {
+  font-size: 1.3em;
+}
+
+h3 {
+  font-size: 1.1em;
+}
+
+h4 {
+  font-size: 1em;
+}
+
+h5 {
+  font-size: 0.9em;
+}
+
+h6 {
+  font-size: 0.7em;
+}
+
+blockquote p {
+  color: var(--atheme-comment);
+  font-weight: bolder;
+  font-size: 1.2em;
+  margin-block-start: 0.5em;
+  margin-block-end: 0.5em;
+}
+
+ul {
+  margin-block-start: 0.25em;
+  margin-block-end: 0.25em;
+}
+
+ul>li,
+ol>li {
+  color: white;
+  font-size: 1em;
+}
+
+code {
+  font-family: Consolas, sans-serif;
+  line-height: 1.25;
+  display: inline-block;
+  font-size: 0.9em;
+  letter-spacing: 0;
+  margin: -0.1em 0.15em;
+  padding: 0.1em 0.2em;
+  vertical-align: baseline;
+}
+
+pre {
+  margin: 1em;
+  min-height: 1em;
+  overflow-y: auto;
+  overflow-x: hidden;
+  overflow-wrap: break-word;
+}
+
+pre code {
+  box-sizing: border-box;
+  margin: 0;
+  min-width: 100%;
+  padding: 0.5em;
+  font-size: 0.7em;
+  border: white;
+  border-style: dashed;
+  border-width: 0px;
+  width: 100%;
+  color: var(--atheme-foreground);
+}
+
+pre code svg[data-marp-fitting="svg"] {
+  max-height: calc(580px - 1em);
+}
+
+blockquote {
+  margin: 0;
+  color: rgba(192, 192, 192, 1);
+}
+
+mark {
+  background: transparent;
+}
+
+table {
+  border-spacing: 0;
+  border-collapse: collapse;
+  margin: 1em 0 0 0;
+}
+
+table th,
+table td {
+  padding: 0.2em 0.4em;
+  border-width: 1px;
+  border-style: solid;
+}
+
+section {
+  font-size: 1.9em;
+  line-height: 1.3;
+  display: flex;
+  letter-spacing: 1.25px;
+  justify-content: center;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  padding: 2em;
+  color: var(--atheme-foreground);
+  background-color: var(--atheme-background);
+}
+
+section>*:first-child,
+section>header:first-child+* {
+  margin-top: 0;
+}
+
+section a,
+section mark {
+  color: #3e9ce0;
+}
+
+section p {
+  color: var(--atheme-foreground);
+}
+
+section code {
+  background: var(--atheme-cyan);
+  color: rgba(2, 7, 26, 0.801);
+  font-weight: bold;
+}
+
+section h1 strong,
+section h2 strong,
+section h3 strong,
+section h4 strong,
+section h5 strong,
+section h6 strong {
+  color: var(--atheme-current-line);
+}
+
+section pre>code {
+  background: rgb(46, 45, 45);
+}
+
+section header,
+section footer,
+section section::after,
+section blockquote::before,
+section blockquote::after {
+  color: var(--atheme-comment);
+}
+
+section table th,
+section table td {
+  border-color: var(--atheme-current-line);
+}
+
+section table thead th {
+  background: var(--atheme-current-line);
+  color: var(--atheme-yellow);
+}
+
+section table tbody>tr:nth-child(even) td,
+section table tbody>tr:nth-child(even) th {
+  background: var(--atheme-current-line);
+}
+
+header,
+footer,
+section::after {
+  box-sizing: border-box;
+  font-size: 66%;
+  height: 1.5em;
+  line-height: 1.1em;
+  overflow: hidden;
+  padding: 10px 25px;
+  position: absolute;
+  color: var(--atheme-comment);
+}
+
+header {
+  left: 0;
+  right: 0;
+  top: 0;
+}
+
+footer {
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+section::after {
+  right: 0;
+  bottom: 0;
+  font-size: 80%;
+}
+
+a {
+  color: var(--atheme-cyan);
+  text-decoration: none;
+}
+
+.monaco-preview-editor {
+  width: 100%;
+  height: 350px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+video {
+  max-width: 95%;
+}

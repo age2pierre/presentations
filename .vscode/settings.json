@@ -1,0 +1,5 @@
+{
+  "editor.formatOnSave": false,
+  "markdown.marp.themes": ["theme/dracula.css", "theme/dark.css"],
+  "editor.tabSize": 2
+}
