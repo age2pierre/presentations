@@ -9,7 +9,7 @@
   },
   "packageManager": "pnpm@9.4.0",
   "scripts": {
-    "server": "marp -p --server ./src",
+    "server": "marp --html -p --server ./src",
     "build": "node scripts/build.js",
     "build:pdf": "FORMATS=html,pdf node scripts/build.js"
   },
